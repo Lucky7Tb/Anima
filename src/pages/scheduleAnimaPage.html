@@ -1,0 +1,32 @@
+<div class="container" style="margin-top: 30px;">
+    <div class="row">
+        <div class="input-field col s12 l11">
+            <select id="schedule-anima-select">
+                <option value="" disabled selected>Pilih Hari</option>
+                <option value="monday">Senin</option>
+                <option value="tuesday">Selasa</option>
+                <option value="wednesday">Rabu</option>
+                <option value="thursday">Kamis</option>
+                <option value="friday">Jumat</option>
+                <option value="saturday">Sabtu</option>
+                <option value="sunday">Minggu</option>
+              </select>
+            <label>Lihat jadwal anime</label>
+        </div>
+
+        <div class="col s12 l1">
+            <button class="btn-large waves-effect waves-light blue lighten-1 hide-on-med-and-down"
+                id="schedule-anima-search-button">Search</button>
+            <button class="btn waves-effect waves-light blue lighten-1 hide-on-large-only" id="schedule-anima-search-button" style="width: 100%">Search</button>
+        </div>
+        <div class="col s12">
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <schedule-anima-list></schedule-anima-list>
+    </div>
+     <floating-button></floating-button>
+</div>

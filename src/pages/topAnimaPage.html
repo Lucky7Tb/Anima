@@ -1,0 +1,48 @@
+<div class="container" style="margin-top: 30px;">
+
+  <div class="row">
+    <div class="input-field col s12 l11">
+      <select id="top-anima-select">
+        <optgroup label="Anime">
+          <option value="airing" data-type="anime">Airing</option>
+          <option value="tv" data-type="anime">TV</option>
+          <option value="movie" data-type="anime">Movie</option>
+          <option value="ova" data-type="anime">Ova</option>
+          <option value="special" data-type="anime">Special</option>
+        </optgroup>
+        <optgroup label="Manga">
+          <option value="manga" data-type="manga">Manga</option>
+          <option value="novels" data-type="manga">Novel</option>
+          <option value="oneshots" data-type="manga">One Shot</option>
+        </optgroup>
+        </select>
+      <label>Cari Top anime atau manga</label>
+    </div>
+    
+    <div class="col s12 l1">
+      <button class="btn-large waves-effect waves-light blue lighten-1 hide-on-med-and-down" id="top-anima-search-button">Search</button>
+      <button class="btn waves-effect waves-light blue lighten-1 hide-on-large-only" id="top-anima-search-button" style="width: 100%">Search</button>
+    </div>
+    <div class="col s12">
+      <div class="progress">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="left">
+        <button class="btn-small waves-effect waves-light blue lighten-1" id="top-anima-paginate-prev">Prev 50<i class="material-icons left">navigate_before</i>
+        </button>
+      </div>
+      <div class="right">
+        <button class="btn-small waves-effect waves-light blue lighten-1" id="top-anima-paginate-next">Next 50<i class="material-icons right">navigate_next</i>
+        </button>
+      </div>
+    </div>
+    <top-anima-list></top-anima-list>
+  </div>
+  <floating-button></floating-button>
+</div>
